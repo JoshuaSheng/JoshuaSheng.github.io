@@ -1,24 +1,14 @@
-Blackjack Game made by Joshua Sheng
+blackjack img via wikipedia user @pptori
+https://en.wikipedia.org/wiki/Card_counting#/media/File:Blackjack_board.JPG
 
-credits to:
+stock ticker img via the motley fool
+https://www.fool.com/investing/2016/12/07/what-investors-need-to-know-about-under-armours-ti.aspx
 
-images:
-Felt table background:
-u/buddingmonkey
-https://i.imgur.com/I73OWYX.jpg
+backend image via PCMag
+https://www.pcmag.com/how-to/how-and-why-to-change-your-dns-server
 
-audio:
+frontend image via glasbans ltd.
+https://www.glasbans.com/web-design.php
 
-Poker Chips sound effect:
-Title: Poker Chips
-Uploaded: 5.02.18
-License: Attribution 3.0
-Recorded by Daniel Simion
-http://soundbible.com/2204-Poker-Chips.html
-
-Click sound effect:
-Title: Click2
-Uploaded: 01.22.11
-License: Attribution 3.0
-Recorded by Sebastian
-http://soundbible.com/1705-Click2.html
+version control img via lynda.com
+https://www.lynda.com/Git-tutorials/What-version-control/2211319/2227479-4.html

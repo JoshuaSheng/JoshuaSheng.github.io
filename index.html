@@ -1,45 +1,277 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Practice Website 11/15/2020</title>
-<link rel="stylesheet" href="style.css">
-<meta charset="utf-8" />
+  <title>Joshua Sheng</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div id="start-screen">
-    <img id="logo" src="imgs/blackjack-logo.jpg">
-    <div id="start-container">
-      <div class="game-option start-button">Play</div>
-    </div>
-  </div>
-  <div id="main-content">
-    <div id="bet-screen-container">
-      <div id="bet-screen">
-        <h1>Place Bets</h1>
-        <hr>
-        <form id="submit-bet">
-          <label for="bet-amount">Bet Amount</label>
-          <br>
-          <input id="bet-amount" type="number" name="bet-amount"/>
-          <br>
-          <input type="submit">
-        </form>
-        <div id="bet-balance">
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top d-none d-sm-block">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <canvas class="home-bg"></canvas>
+    <div id="home" class="homepage">
+      <div class="homepage-content">
+        <div class="homepage-title">Joshua Sheng</div>
+        <hr class="homepage-break">
+        <div class="icons">
+          <a href="#"><i class="fa fa-envelope fa-2x"></i></a>
+          <a href="#"><i class="fa fa-github fa-2x"></i></a>
+          <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+        </div>
+        <div class="resume-container">
+          <a href="#" class = "dlbutton">Download Resume</a>
         </div>
       </div>
     </div>
-    <div id="playing-area">
-      <div id="npc-cards">
+    <div class="main-content">
+      <div id="aboutme" class="content-block aboutme">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>About Me</h1>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card bg-light personal-info">
+                <img class="img-fluid profile-img" src="github_logo.png">
+                <h3>Joshua Sheng</h3>
+                <p>CFM Student at UWaterloo</p>
+                <p>2020-2025</p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h2 class="about-header">Biography</h2>
+              <p> Hi, my name is Joshua Sheng! I'm a Computing and Financial
+                Management Student in my 1B term at the University of Waterloo.
+                I enjoy making stuff, learning new languages, and getting
+                better at coding in general. I'm a mostly self-taught
+                programmer, and I pick up new languages pretty quickly.</p>
+
+              <p>Outside of computer programming, I also enjoy running, playing the violin,
+              travelling to new places, and reading in my spare time. I'm also
+              learning about the finance industry, a field I want to explore
+              in the future.<p>
+
+              <p>I think while I might not be the most experienced, I work hard
+              and learn quickly without a lot of handholding, in any environment.
+              I look forward to working with you in the future!</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="message-box">
+      <div id="projects" class="content-block projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Projects</h1>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div id="project-carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#project-carousel" data-slide-to="1"></li>
+                <li data-target="#project-carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img class="w-100 img-fluid" src="img/blackjack.jpg" alt="First slide">
+                  <div class="carousel-caption d-block caption">
+                    <h5>Online BlackJack</h5>
+                    <p>BlackJack game built purely with HTML, CSS, and JS. Code
+                    documented with JSDoc.</p>
+                    <h6>Tech Stack: HTML, CSS, JS</h6>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <img class="w-100 img-fluid" src="img/stock-ticker-board.jpg" alt="Second slide">
+                  <div class="carousel-caption d-block caption">
+                    <h5>Securities Master Database</h5>
+                    <p>Database containing daily OHLC data for S&P 500 Companies
+                    for the past 10 years stored on a local mysql server. Uses Pandas and Matplotlib to visualize data.</p>
+                    <h6>Tech Stack: MySQL, Python, yfinance, Pandas, Matplotlib, PyMySQL</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="w-100 img-fluid" src="img/Portfolio.png" alt="Third slide">
+                  <div class="carousel-caption d-block caption">
+                    <h5>Portfolio Website</h5>
+                    <p>This website was built mainly with Bootstrap, using HTML,
+                      CSS, and a little bit of JavaScript. It is fully responsive
+                      and built mobile-first.</p>
+                    <h6>Tech Stack: HTML, CSS, JavaScript, Bootstrap</h6>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="player-cards">
+      <div id="skills" class="content-block skills">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Skills</h1>
+              <p>(Try clicking the cards!)</p>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="flipcard">
+                <div class="flipcard-inner">
+                  <div class="flipcard-front frontendimg">
+                    <h1>Frontend</h1>
+                  </div>
+                  <div class="flipcard-back">
+                    <h2>Frontend</h2>
+                    <div class="card">
+                      <h3>Languages</h3>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                      </ul>
+                    </div>
+                    <div class="card technologies">
+                      <h3>Technologies</h3>
+                      <ul>
+                        <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="flipcard">
+                <div class="flipcard-inner">
+                  <div class="flipcard-front backendimg">
+                    <h1>Backend</h1>
+                  </div>
+                  <div class="flipcard-back">
+                    <h2>Backend</h2>
+                    <div class="card">
+                      <h3>Languages</h3>
+                      <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Racket</li>
+                      </ul>
+                    </div>
+                    <div class="card technologies">
+                      <h3>Technologies</h3>
+                      <ul>
+                        <li>MySQL</li>
+                        <li>Pandas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="flipcard">
+                <div class="flipcard-inner">
+                  <div class="flipcard-front otherimg">
+                    <h1>Other</h1>
+                  </div>
+                  <div class="flipcard-back">
+                    <h2>Other</h2>
+                    <div class="card">
+                      <h3>Skills</h3>
+                      <ul>
+                        <li>Git and Github</li>
+                        <li>Basic Excel Skills</li>
+                        <li>MS Office</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="player-options">
-    </div>
-    <div id="bottombar"></div>
-  </div>
-</body>
-<script src="script.js"></script>
+    <footer>
+      <div id="contact" class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact">
+                <h5>Contact Me</h5>
+                <p>Email: j23sheng@uwaterloo.ca</p>
+                <p>Phone: 647-919-3642</p>
+                <div class="icons">
+                  <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-github fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                  <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="credits">
+                <h5>Credits</h5>
+                <a href="https://en.wikipedia.org/wiki/Card_counting#/media/File:Blackjack_board.JPG"><p class="credits"><small>Blackjack image via wikipedia user @pptori</small></p></a>
+                <a href="https://www.fool.com/investing/2016/12/07/what-investors-need-to-know-about-under-armours-ti.aspx"><p class="credits"><small>Stock ticker image via The Motley Fool</small></p></a>
+                <a href="https://www.pcmag.com/how-to/how-and-why-to-change-your-dns-server"><p class="credits"><small>Backend image via PCMag</small></p></a>
+                <a href="https://www.glasbans.com/web-design.php"><p class="credits"><small>Frontend Image via Glasbans Ltd.</small></p></a>
+                <a href="https://www.lynda.com/Git-tutorials/What-version-control/2211319/2227479-4.html"><p class="credits"><small>Version Control image via Lynda.com</small></p></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="tag-container">
+                <h5>Tags</h5>
+                <div class="tag">HTML</div>
+                <div class="tag">CSS</div>
+                <div class="tag">JavaScript</div>
+                <div class="tag">Responsive</div>
+                <div class="tag">Web Design</div>
+                <div class="tag">Web Development</div>
+                <div class="tag">Portfolio</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <hr style="margin-top: 2em;background-color: white;">
+              <p><small>Copyright © 2020 Joshua Sheng</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

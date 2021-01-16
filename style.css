@@ -1,165 +1,206 @@
+@media screen and (max-width: 992px) {
+  .homepage-title {
+    font-size: 15vw;
+  }
+  .about-header {
+    margin-top: 5vh;
+  }
+}
+
 html {
-  background: url("imgs/blackjack-table.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: circle;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-label {
-  font-family: sans-serif;
-  font-size: 24px;
-}
-
-input {
-  margin: 5px;
-  padding: 10px;
-  font-family: sans-serif;
-}
-
-#start-screen {
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: black;
-  position: fixed;
-  display: block;
+}
+
+li {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.flipcard-back .card {
+  padding-left: 1vw;
+}
+
+.icons a{
+  color: white;
+}
+
+.homepage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-content {
+  padding: 2vh;
+  color: white;
   z-index: 1;
+  margin: auto;
 }
 
-#bet-screen-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+.homepage-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15vh;
+}
+
+.homepage-break {
+  background-color: white;
+  margin: 0;
+}
+
+.home-bg {
+  display: block;
   position: absolute;
-  padding: 0;
-  margin: auto;
 }
 
-#bet-screen {
-  margin: auto;
-  width: 30%;
-  height: 80%;
-  padding: 20px;
-  background-image: linear-gradient(to bottom right, rgba(22,230,246,1), rgba(235,48,255,1));
+.main-content {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.content-block {
+  margin-top: 10vh;
+  background-color: white;
   position: relative;
   display: block;
-  border-radius: 18px;
-  -webkit-box-shadow: 0px 9px 20px 10px #1C3221;
-  -moz-box-shadow: 0px 9px 20px 10px #1C3221;
-  box-shadow: 0px 9px 20px 5px #1C3221;
+  z-index: 2;
 }
 
-#logo {
-  display: inherit;
-  margin: auto;
-}
-
-#main-content {
-  margin: auto;
-  padding: 0px 10px 0px 10px;
-}
-
-#playing-area {
-  display: grid;
-  height: 500px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
-  "dealer dealer dealer dealer dealer"
-  "dealer dealer dealer dealer dealer"
-  "message message message message message"
-  "player player player player player"
-  "player player player player player";
-}
-
-#npc-cards {
-  grid-area: dealer;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#message-box {
-  grid-area: message;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: impact;
-  font-size: 64px;
-}
-
-#player-cards {
-  grid-area: player;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  display: flex;
-  height: 60px;
-  width: 40px;
-  border: 2px solid black;
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  margin: 5px;
-}
-
-.hidden {
-  color: white;
-}
-
-#player-options {
-  margin: auto;
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.game-option {
-  width: 24%;
+.resume-container {
+  margin-top: 1em;
   text-align: center;
-  background: #2e856e;
-  padding: 10px;
-  font-family: "Open Sans", sans-serif;
-  border: 1px solid #59b9ca;
-  border-radius: 10px;
-  color: white;
-
-  -webkit-box-shadow: 0px 6px 0px #006a4e;
-  -moz-box-shadow: 0px 6px 0px #006a4e;
-  box-shadow: 0px 6px 0px #006a4e;
 }
 
-.game-option:active {
+.dlbutton {
   color: white;
-  position: relative;
-  top: 4px;
-  -webkit-box-shadow: 0px 2px 0px #006a4e;
-  -moz-box-shadow: 0px 2px 0px #006a4e;
-  box-shadow: 0px 2px 0px #006a4e;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 1em;
 }
 
-#start-container {
-  position: absolute;
-  display: flex;
+.profile-img {
   width: 100%;
-  top: 80%;
+}
+
+.personal-info {
+  padding-bottom: 2vh;
+  text-align: center;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.personal-info p {
+  margin-bottom: 0;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.flipcard {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  background-color: transparent;
+  margin-top: 1vh;
+  height: 50vh;
+  perspective: 100vh;
+}
+
+.flipcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.flipcard-front, .flipcard-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flipcard-front {
+    color: white;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.flipcard-back {
+  padding: 3vh;
+  background-color: rgba(184, 244, 246, 0.3);
+  transform: rotateY(180deg);
+}
+
+.flipcard-back h2 {
+  margin-bottom: 2vh;
+}
+
+.frontendimg {
+  background-image: url("img/webdesign-darken.jpg");
+}
+
+.backendimg {
+  background-image: url("img/backend-darken.jpg");
+}
+
+.otherimg {
+  background-image: url("img/versioncontrol-darken.jpg")
+}
+
+.technologies {
+  margin-top: 3vh;
+}
+
+.footer {
+  background-color: #343a40;
+  margin-top: 20vh;
+  padding: 1em;
+  color: white;
+}
+
+.contact p {
+  margin-bottom: 0.5em;
+}
+
+.credits {
+  margin-bottom: 0;
+}
+
+.tag-container: {
+  display: block;
+}
+.tag {
+  margin: 0.2em 0.2em 0.2em 0;
+  padding: 0.5em;
+  background-color: #2f2f2f;
+  display: inline-block;
+}
+
+.tag-container h5, .credits h5, .contact h5 {
+  margin-top: 1em;
 }
